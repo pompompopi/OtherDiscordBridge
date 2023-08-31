@@ -1,0 +1,3 @@
+# OtherDiscordBridge
+
+Another Discord bridge.

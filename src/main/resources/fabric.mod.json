@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "otherdiscordbridge",
+  "version": "${version}",
+  "name": "OtherDiscordBridge",
+  "description": "Another Discord bridge.",
+  "authors": [
+    "pompompopi"
+  ],
+  "license": "BSD-3-Clause",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "me.pompompopi.otherdiscordbridge.OtherDiscordBridge"
+    ],
+    "preLaunch": [
+      "me.pompompopi.otherdiscordbridge.MixinExtrasBootstrapper"
+    ]
+  },
+  "mixins": [
+    "otherdiscordbridge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
