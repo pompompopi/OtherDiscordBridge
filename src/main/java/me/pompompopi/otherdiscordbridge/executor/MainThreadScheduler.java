@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 import reactor.core.Disposable;
 import reactor.core.scheduler.Scheduler;
 
-public final class MainThreadScheduler implements Scheduler {
+public class MainThreadScheduler implements Scheduler {
   private final MinecraftDedicatedServer dedicatedServer;
 
   public MainThreadScheduler(final MinecraftDedicatedServer dedicatedServer) {
